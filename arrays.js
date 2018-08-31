@@ -30,8 +30,7 @@ function removeElementFromBeginningOfArray(arr) {
   return newArr
 }
 function destructivelyRemoveElementFromEndOfArray(arr) {
-  arr.slice(0, arr.length - 1)
-  return (arr)
+  return (arr.slice(0, arr.length - 1))
 }
 function removeElementFromEndOfArray(arr) {
   var newArr = arr.pop()
