@@ -35,6 +35,13 @@ function destructivelyRemoveElementFromEndOfArray(arr) {
   return (arr)
 }
 function removeElementFromEndOfArray(arr) {
-  var newArr = arr.pop()
-  return newArr
+    var tempArr = arr
+  foo = tempArr.splice(tempArr.length - 1, 1)
+  console.log("arr: " + arr)
+  console.log("tempArr: " + tempArr)
+  arr.push(foo)
+  console.log("push")
+  console.log("arr: " + arr)
+  console.log(foo)
+  return foo
 }
